@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Http;
 
-namespace ChnReverser
+namespace ChnProxyCrawler
 {
 	public class ProxyCrawler
 	{
@@ -39,7 +39,10 @@ namespace ChnReverser
 					string result = await content.ReadAsStringAsync();
 
 					// ... Display the result.
-					if (result != null)
+					if (result != null 
+                        && result.Contains("404") == false
+                        && result.Contains("Error") == false
+                        && result.Contains("error") == false)
 					{
 						return true;
 					}
@@ -47,7 +50,9 @@ namespace ChnReverser
 					{
 						return false;
 					}
-				}
+
+                    client.Dispose();
+                }
 			}
 			catch
 			{

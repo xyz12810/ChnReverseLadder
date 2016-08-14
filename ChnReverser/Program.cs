@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace ChnReverser
+namespace ChnProxyCrawler
 {
 	class MainClass
 	{
@@ -16,7 +16,7 @@ namespace ChnReverser
 				ProxyCrawler crawler = new ProxyCrawler();
 				string[] ipRangeArray = crawler.LoadChinaList();
 				Console.WriteLine(ipRangeArray);
-				Parallel.ForEach(ipRangeArray, new ParallelOptions { MaxDegreeOfParallelism = 50 }, (string currentIp) =>
+				Parallel.ForEach(ipRangeArray, new ParallelOptions { MaxDegreeOfParallelism = 3 }, (string currentIp) =>
 			 	{
 					 workerThread(currentIp);
 			 	});
@@ -53,7 +53,7 @@ namespace ChnReverser
 
 			// We cannot use unsigned 32 bit int here, and signed int32 isn't long enough.
 			// So, here we use signed long (int64) instead.
-			Parallel.For(0, ipLength, new ParallelOptions { MaxDegreeOfParallelism = 500 }, async (long ipIndex) =>
+			Parallel.For(0, ipLength, new ParallelOptions { MaxDegreeOfParallelism = 3 }, async (long ipIndex) =>
 			 {
 				 for (int proxyPort = 80; proxyPort <= 9000; proxyPort++)
 				 {

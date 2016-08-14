@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("ChnReverser")]
+[assembly: AssemblyTitle("ChnProxyCrawler")]
 [assembly: AssemblyDescription("Proxy back to the \"Special Communism Protection Zone\"")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("RMIT University (Australia)")]
