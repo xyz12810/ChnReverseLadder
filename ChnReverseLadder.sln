@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChnReverseProxyCrawler", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GimmeProxyDotNet", "GimmeProxyDotNet\GimmeProxyDotNet.csproj", "{477005E8-BA7E-4CB5-801F-CCAB92EBD18C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyHandler", "ProxyHandler\ProxyHandler.csproj", "{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,14 @@ Global
 		{477005E8-BA7E-4CB5-801F-CCAB92EBD18C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{477005E8-BA7E-4CB5-801F-CCAB92EBD18C}.Release|x86.ActiveCfg = Release|Any CPU
 		{477005E8-BA7E-4CB5-801F-CCAB92EBD18C}.Release|x86.Build.0 = Release|Any CPU
+		{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}.Debug|x86.Build.0 = Debug|Any CPU
+		{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}.Release|x86.ActiveCfg = Release|Any CPU
+		{4E1C05F2-1018-4939-8CBE-98FD3C28BB9F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

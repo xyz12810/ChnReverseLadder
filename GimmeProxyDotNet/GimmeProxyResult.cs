@@ -30,7 +30,7 @@ namespace GimmeProxyDotNet
 		public string Protocol { get; set; }
 
 		[JsonProperty(PropertyName = "ip")]
-		public string IPAddress { get; set; }
+		public string IpAddress { get; set; }
 
 		[JsonProperty(PropertyName = "port")]
 		public string Port { get; set; }
@@ -39,13 +39,13 @@ namespace GimmeProxyDotNet
 		public string Country { get; set; }
 
 		[JsonProperty(PropertyName = "tsChecked")]
-		public DateTime CheckedTime { get; set; }
+		public Int64 CheckedTime { get; set; }
 
 		[JsonProperty(PropertyName = "curl")]
 		public string CurlAddr { get; set; }
 
 		[JsonProperty(PropertyName = "ipPort")]
-		public string IpPort { get; set; }
+		public string IpAndPort { get; set; }
 
 		[JsonProperty(PropertyName = "type")]
 		public string ProxyType { get; set; }
